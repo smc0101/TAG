@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Callahan Project</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="styles.css">
+		<script type="text/javascript">
+			var accItem = document.getElementsByClassName('accordionItem');
+		    var accHD = document.getElementsByClassName('accordionItemHeading');
+		    for (i = 0; i < accHD.length; i++) {
+		        accHD[i].addEventListener('click', toggleItem, false);
+		    }
+		    function toggleItem() {
+		        var itemClass = this.parentNode.className;
+		        for (i = 0; i < accItem.length; i++) {
+		            accItem[i].className = 'accordionItem close';
+		        }
+		        if (itemClass == 'accordionItem close') {
+		            this.parentNode.className = 'accordionItem open';
+		        }
+		    }
+		</script>
+	</head>
+	<body>
+		<div class="accordionWrapper">
+			<h1>EXPANDABLE CONTENT</h1>
+			<div class="accordionItem open">
+				<div class="accordionItemHeading" data-toggle="collapse">
+						<img src="images/avatar.astronaut.png" width="61" height="60" alt=""/>
+						<aside>
+						  <h3>Karen Stewart</h3>
+							<p>New York, USA</p>
+						</aside>
+				</div>
+				<div class="accordionItemContent">
+					<ul>
+						<li>Phone<br> 5-(989)262-8570</li>
+						<li>Email<br>studio@csform.com</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="accordionItem close">
+				<div class="accordionItemHeading" data-toggle="collapse">
+					<img src="images/avatarjose.jpg" width="61" height="60" alt=""/>
+					<aside>
+						<h3>Jose Edward</h3>
+						<p>Copenhagen, Denmark</p>
+					</aside>
+				</div>
+				<div class="accordionItemContent">
+					<ul>
+						<li>Phone<br> 5-(989)262-8570</li>
+						<li>Email<br>studio@csform.com</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="accordionItem close">
+				<div class="accordionItemHeading" data-toggle="collapse">
+					<img src="images/avatarhelen.jpg" width="61" height="60" alt=""/>
+					<aside>
+						<h3>Helen Berry</h3>
+						<p>Paris, France</p>
+					</aside>
+				</div>
+				<div class="accordionItemContent">
+					<ul>
+						<li>Phone<br> 5-(989)262-8570</li>
+						<li>Email<br>studio@csform.com</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="accordionItem close">
+				<div class="accordionItemHeading" data-toggle="collapse">
+					<img src="images/avatarsamuel.jpg" width="61" height="60" alt=""/>
+					<aside>
+						<h3>Samuel Powell (1978)</h3>
+						<p>London, Englend</p>
+					</aside>
+				</div>
+				<div class="accordionItemContent">
+					<ul>
+						<li>Phone<br> 5-(989)262-8570</li>
+						<li>Email<br>studio@csform.com</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
